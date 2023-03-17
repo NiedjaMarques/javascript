@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro JS</title>
+    <style>
+        body {
+            background-color: rgb(0, 115, 255);
+            font: normal 15pt Arial;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Olá, Mundo!
+    </h1>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil molestias, quis iste unde excepturi iusto sunt neque aliquam mollitia hic ad dolor. Ipsa aliquid id nobis amet doloremque, vero aperiam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat maiores repellendus cumque laborum iure voluptatibus ut delectus eaque similique, aut doloribus facilis ab, quod minus officiis aliquid mollitia error eveniet.
+    </p>
+
+    <script>
+        var nome = window.prompt (' Olá, qual é o seu nome? ') //a variavel nome recebe o resultado do prompt que vai aparecer na janela
+        window.alert (' É um prazer te conhecer, ' + nome + '!') // aparece um alerta com o nome colocado
+        var idade = window.prompt (' e quantos anos voce tem? ') // a variavel idade recebe o resultado do prompt que vai aparecer na janela
+        window.alert (' Ok, ' + nome + ' de ' + idade + ' ! ') // aparece um alerta com o nome da pessoa e a idade que ela colocou
+        var profissao = window.prompt (' e qual é a sua profissão ? ') // a variavel profissao recebe o resultado do prompt que vai aparecer na janela 
+        window.alert (nome + ' , ' + idade + ' , ' + profissao + ', Temos todas as informações necessarias, vamos fazer seu cadastro, por favor aguarde. ') // aparece um alerta com o nome, a idade e a profissão conforme o preenchimento
+    </script>
+    
+</body>
+</html>
