@@ -1,0 +1,11 @@
+body {
+    font: normal 18px arial;
+    background-color: lightgrey;
+}
+
+input {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(244, 40, 189);
+}
