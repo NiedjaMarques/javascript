@@ -12,12 +12,32 @@
         Sistema de Multas
     </h1>
 
-    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h.
-    <input type="button" value="verificar" onclick="calcular()">
+    Velocidade do carro: 
+    <input type="number" name="vel" id="vel"> Km/h.
+    <input onclick="calcular()" type="button" value="verificar">
 
     <div id="res">
-
+        
     </div>
-    
+
+    <script>
+
+        function calcular(){  
+            var velo = window.document.getElementById('vel') // var velo criada pra fazer a ligação do JS com o HTML
+            var vel1 = Number(velo.value) // a var vel1 pega o valor que o usuario colocar na var velo - Importante colocar o  .value nesta situação 
+            var res = window.document.getElementById('res') // chamando a div com id res no meu JS
+
+            if (vel1 > 60) {
+                res.innerHTML = `<p>Sua velocidade atual é de <strong style="color:red";>${vel1}</strong>Km/h.</p>`
+                res.innerHTML += `<p>Você excedeu o limite permitido e será <strong style="color:red";>MULTADO!</strong></p>`
+
+            }else{
+                res.innerHTML = `<p>Sua velocidade atual é de <strong style="color:red";>${vel1}</strong>Km/h.</p>`
+                res.innerHTML += `<p>Use sempre o cinto de segurança e continue seguindo as ordens de trânsito.</p>`
+            }
+        }
+        
+    </script>
+
 </body>
 </html>
