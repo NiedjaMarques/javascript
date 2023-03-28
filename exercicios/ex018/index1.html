@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horas</title>
+    <style>
+        body {
+            font: normal 15px arial;
+        }
+
+        input {
+            padding: 10px;
+            margin: 4px;
+            background-color: rgba(0, 128, 0, 0.351);
+            border: none;
+            border-radius: 5px;
+        }
+
+        h1 {
+            color: green;
+        }
+
+        strong {
+            color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Rélogio:
+    </h1>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique tenetur culpa placeat deserunt quasi quae error exercitationem nesciunt, deleniti non unde nulla veritatis provident optio perspiciatis dolorum consectetur soluta saepe! 
+    </p>
+    
+    <input type="time" name="hora" id="hora">
+    <input type="button" value="pesquisar" onclick="clicar()">
+    <div id="res"></div>
+
+    <script>
+        function clicar(){
+            var hr1 = document.getElementById('hora')
+            var rel = hr1.value.split(":")[0]; // extrai a hora e converte em inteiro
+
+            var res = document.getElementById('res')
+            res.innerHTML = `São ${rel} hrs/min.`
+
+            if (rel < 6) {
+                res.innerHTML += `<p>Boa madrugada.</p>`
+            }else{
+                if (rel < 12) {
+                    res.innerHTML += `<p>Bom dia.</p>`
+                }else if (rel < 18){
+                    res.innerHTML += `<p>Boa tarde.</p>`
+                } else{
+                    res.innerHTML += `<p>Boa noite.</p>`
+                }
+            }
+        }
+    </script>    
+</body>
+</html>
