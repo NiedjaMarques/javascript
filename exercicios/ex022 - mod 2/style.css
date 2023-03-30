@@ -1,0 +1,23 @@
+body {
+    font: normal 18px arial;
+}
+
+h1 {
+    color: brown;
+}
+
+button {    
+    background-color: brown;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover {
+    transition: 0.3s;
+    background-color: rgba(165, 42, 42, 0.807);
+}
+
+p {
+    font-size: 15px;
+}
