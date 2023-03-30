@@ -44,23 +44,22 @@
     <script>
         function clicar(){
             var hr1 = document.getElementById('hora')
-            var rel = hr1.value.split(":")[0]; // extrai a hora e converte em inteiro
+            var rel = (hr1.value);
 
             var res = document.getElementById('res')
             res.innerHTML = `São ${rel} hrs/min.`
 
-            if (rel < 6) {
+            if (rel >= "00" && rel < "06") {
                 res.innerHTML += `<p>Boa madrugada.</p>`
-            }else{
-                if (rel < 12) {
-                    res.innerHTML += `<p>Bom dia.</p>`
-                }else if (rel < 18){
-                    res.innerHTML += `<p>Boa tarde.</p>`
-                } else{
-                    res.innerHTML += `<p>Boa noite.</p>`
-                }
+            }else if (rel >= "06" && rel < "12") {
+                res.innerHTML += `<p>Bom dia.</p>`
+            }else if (rel >= "12" && rel < "18"){
+                res.innerHTML += `<p>Boa tarde.</p>`
+            }else if (rel >= "18" && rel < "23"){
+                res.innerHTML += `<p>Boa noite.</p>`
             }
         }
-    </script>    
+    </script>  
+      
 </body>
 </html>
