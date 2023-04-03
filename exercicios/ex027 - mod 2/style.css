@@ -1,0 +1,16 @@
+body {
+    font: normal 20px arial;
+}
+
+button {
+    padding: 10px;
+    margin: 4px;
+    background-color: rgba(0, 128, 0, 0.351);
+    border: none;
+    border-radius: 5px;
+}
+
+h1 {
+    color: green;
+}
+
