@@ -1,14 +1,17 @@
 function calcular(){
-    let num = Number(document.getElementById('txtnum').value); // let que pega o valor que o usuario colocar na caixa. 
-    let resultado = document.getElementById('result') // let que chama uma div no html // serve para mostrar a tabuada quando for executado
-    let tabuada = ''; // let tabuada vazia 
+    let num = document.getElementById('txtnum'); // let que pega o valor que o usuario colocar na caixa. 
+    let resultado = document.getElementById('result') // let que chama div select no html 
 
-    if (num == 0){
+    if (num.value.length == 0){ // verificação do valor que o usuario colocou
         window.alert('Por favor, digite um número!')
-    } else{
-        for(let cont = 1; cont <= 10; cont++){
-            tabuada += `${num} x ${cont} = ${num*cont} <br/>` //Operação um valor * o outro
+    } else {
+        let n = Number(num.value) //converção do valor colocado na caixa de texto de string para numero
+        resultado.innerHTML = '' //Estamos limpando o conteúdo da div com o ID "result".
+        for(let cont = 1; cont <= 10; cont++){ // loop for
+            let item = document.createElement('option') // a cada interação do loop, cria-se um elemento option
+            item.text = `${n} x ${cont} = ${n*cont}` // minha option será o resultado da operação
+            item.value = `resultado ${cont}` //importante para php
+            resultado.appendChild(item) // Juntei o elemento option à variavel resultado, usando resultado.appendChild(item), para que a tabuada calculada seja exibida na página dentro do select.
         }
     }    
-    resultado.innerHTML = tabuada; //tabuada é a operação
 }
