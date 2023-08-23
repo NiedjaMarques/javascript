@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interação JS - 2</title>
+    <style>
+        body {
+            background-color: rgb(251, 219, 170);
+            font: normal 15px arial;
+        }
+
+        h1 {
+            color: #408999;
+            
+        }
+        
+        button {
+            color: #FB77AA;  
+            padding: 20px;          
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Interagindo com um botão
+    </h1>
+
+    <button onclick="clicou()">
+        <a href="#">Clicla em mim!</a>
+    </button>
+    
+
+    <script>
+        function clicou(){
+            window.alert('Você clicou no botão!')
+        }
+    </script>
+</body>
+</html>

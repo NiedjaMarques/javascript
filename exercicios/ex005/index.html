@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com JS - 5 </title>
+    <style>
+        body {
+            background-color: rgb(251, 219, 170);
+            font: normal 15px arial;
+        }
+
+        h1, p {
+            color: #408999;
+            
+        }
+        
+        button {
+            background-color: #faa7f9;
+            border: none;
+            border-radius: 5px; 
+            padding: 10px; 
+            font-size: 18px;         
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Trabalhando com números
+    </h1>
+
+    <button onclick="clicou()">
+        Clique para calcular
+    </button>
+
+    <p id="result">
+        O resultado vem aqui...
+    </p>
+
+
+    <script>
+        window.alert('Seja bem-vindo(a) ao meu site!') // o alerta aparece assim que a pagina é carregada
+        function clicou(){ //função é executada assim que o botão é clicado
+            let result = document.getElementById('result')
+            let n1 = Number(window.prompt('Digite um número:'))
+            result.innerHTML = (`O dobro de ${n1} é ${n1*2} a metade é ${n1/2}!`)            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados com JS - 3</title>
+    <style>
+        body {
+            background-color: rgb(251, 219, 170);
+            font: normal 15px arial;
+        }
+
+        h1 {
+            color: #408999;
+            
+        }
+        
+        button {
+            color: #FB77AA;  
+            padding: 20px; 
+            color: black;
+            font-size: 20px;         
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Trabalhando com dados v1.0
+    </h1>
+
+    <button onclick="clicou()">
+        Clique para começar
+    </button>
+
+
+    <script>
+        function clicou(){
+            var nome = window.prompt('Qual é o seu nome?')
+            window.alert(`Olá, ${nome}! É um prazer te conhecer!`)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados com Js - 4</title>
+    <style>
+        body {
+            background-color: rgb(251, 219, 170);
+            font: normal 15px arial;
+        }
+
+        h1, p {
+            color: #408999;
+            
+        }
+        
+        button {
+            color: #FB77AA;  
+            padding: 10px; 
+            font-size: 20px;         
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Trabalhando com dados v2.0
+    </h1>
+
+    <button onclick="clicou()">
+        Clique para começar
+    </button>
+
+    <p id="resultado">
+        Aqui vai aparecer o resultado...
+    </p>
+
+
+    <script>
+        function clicou(){
+            let nome = window.prompt('Qual é o seu nome?')
+            let result = document.getElementById('resultado')
+            result.innerHTML = (`Olá, <strong>${nome}</strong>! É um grande prazer te conhecer!`)
+        }
+    </script>
+</body>
+</html>
