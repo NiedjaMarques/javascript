@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com JS - 6</title>
+    <style>
+        h1{
+            font: normal 32px arial;
+        }
+
+        button {
+            padding: 20px;
+            
+        }
+
+        button, p {
+            font: normal 18px arial;
+        }      
+    </style>
+
+</head>
+<body>
+    <h1>
+        <strong>Somando dois números</strong>
+    </h1>
+
+    <button onclick="clicou()">
+        Iniciar a soma
+    </button>
+
+    <p id="resultado">
+        O resultado vem aqui...
+    </p>
+
+
+    <script>
+        function clicou(){
+            let num1 = Number(window.prompt("Digite um número:"))
+            let num2 = Number(window.prompt('Digite outro número:'))
+            let soma = num1 + num2
+            resultado.innerHTML = (`A soma entre <mark>${num1}</mark> e <mark>${num2}</mark> é igual a <strong>${soma}</strong>!`)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript externo - 10</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+        body{
+            font-family: 'Montserrat', sans-serif;
+            color: rgb(45, 147, 45);
+            
+        }
+
+        button {
+            padding: 20px;
+            background-color: rgb(200, 122, 218);
+            border-radius: 5px;
+            border: none;
+        }
+
+        button:hover {
+            background-color: rgb(45, 147, 45);
+            transition-duration: 0.4s;
+        }
+
+        p{
+            font: bold 15px 'Montserrat', sans-serif;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Javascript Externo
+    </h1>
+
+    <button onclick="açao1()">        
+        Ação 1
+    </button>
+
+    <button onclick="açao2()">        
+        Ação 2
+    </button>
+
+    <button onclick="açao3()">        
+        Ação 3
+    </button>
+
+    <button onclick="açao4()">        
+        Ação 4
+    </button>
+
+    <p id="result">
+       
+    </p>
+
+    <script src="index.js"></script>
+</body>
+</html>

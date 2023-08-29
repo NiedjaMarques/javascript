@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com JS - 8</title>
+    <style>
+        h1{
+            font: normal 32px arial;
+        }
+
+        button {
+            padding: 20px;
+            font: normal 18px arial;            
+        }
+
+        section {
+            font: normal 18px arial;    
+            margin-top: 15px;
+            padding-top: 20px ;        
+        }      
+    </style>
+</head>
+<body>
+    <h1>
+        <strong>Vários cálculos em JS</strong>
+    </h1>
+
+    <button onclick="clicou()">
+        Calcular média
+    </button>
+
+    <section id="result">
+        O resultado vai aparecer aqui...
+    </section>
+    
+    
+
+    <script>
+        function clicou(){
+            let num1 = window.prompt('Digite um número:')
+            let result = document.getElementById(`result`)
+
+            result.innerHTML = (`O número a ser analisado aqui será o <strong>${num1}</strong><hr><br>`)
+            result.innerHTML += (`O seu valor absoluto é ${Math.abs(num1)} <br>`)
+            result.innerHTML += (`A sua parte inteira é ${Math.trunc(num1)} <br>`)
+            result.innerHTML += (`O valor inteiro mais próximo é ${Math.round(num1)} <br>`)
+            result.innerHTML += (`A sua raiz quadrada é ${Math.sqrt(num1)} <br>`)
+            result.innerHTML += (`A sua raiz cúbica é ${Math.cbrt(num1)} <br>`)
+            result.innerHTML += (`O valor de ${num1}<sup>2</sup> é ${Math.pow(num1,2)}<br>`)
+            result.innerHTML += (`O valor de ${num1}<sup>3</sup> é ${Math.pow(num1,3)}`)
+        }
+    </script>
+    
+</body>
+</html>

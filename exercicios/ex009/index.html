@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Cliques - 9</title>
+    <style>
+        h1{
+            font: normal 32px arial;
+        }
+
+        button {
+            padding: 20px;
+            font: normal 18px arial;            
+        }   
+        
+        section{
+            font: normal 18px arial;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Contador de cliques
+    </h1>
+
+    <button onclick="contando()">
+        Clique em mim
+    </button>
+
+    <button onclick="zerando()">
+        Zerar o contador
+    </button>
+
+    <section id="result">
+        O contador está com 0 cliques.
+    </section>
+
+
+
+    <script>
+        let c = 0 //Variavel GLOBAL
+        let frase = document.getElementById('result')//Variavel GLOBAL
+        function contando(){    // quando o botão contando for cliclado...         
+            c++ // C recebe + 1            
+            frase.innerHTML = (`O contador está com <mark>${c}</mark> cliques.<br>`) // a frase aparece iniciando a contagem
+        }  
+        
+        function zerando(){ // quando o botão zerando for clicado...
+            c = 0 // a contagem para 
+            frase.innerHTML = null // a frase desaparece
+        }
+
+    </script>
+</body>
+</html>

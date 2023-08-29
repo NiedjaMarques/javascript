@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados com JS - pratica - 3</title>
+    <style>
+        h1{
+            font: normal 32px arial;
+        }
+
+        button{
+            padding: 20px;
+            font: normal 15px arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        <strong>Trabalhando com dados v1.0</strong>
+    </h1>
+    
+    <button onclick="clicou()">
+        Clique para começar
+    </button>
+
+
+    <script>
+        function clicou(){
+            let nome = window.prompt('Qual é o seu nome?')
+            let respt = window.alert(`Olá, ${nome}! É um prazer te conhecer!`)
+        }
+        
+    </script>
+</body>
+</html>

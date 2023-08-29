@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados com JS - 4 - pratica</title>
+
+    <style>
+        h1{
+            font: normal 32px Arial;
+        }
+
+        button {
+            padding: 30px;
+        }
+
+        p, button{
+            font: normal 16px arial;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        <strong>Trabalhando com Dados v2.0</strong>
+    </h1>
+    
+    <button onclick="clicou()">
+        Clique para começar
+    </button>
+
+    <p id="result">
+        Aqui vai aparecer o resultado...
+    </p>
+
+
+
+    <script>
+        function clicou(){
+            let nome = window.prompt('Qual é o seu nome?')
+            let result = document.getElementById('result')
+
+            result.innerHTML = (`Olá, <strong>${nome}</strong>! É um grande prazer te conhecer! <strong>:)</strong>`)
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número com JS - 5 - prática</title>
+    <style>
+        h1{
+            font: normal 30px arial;
+
+        }
+
+        p, button {
+            font: normal 16px arial;
+        }
+
+        button{
+            padding: 20px;
+        }      
+
+    </style>
+</head>
+<body>
+    <h1>
+        <strong>Trabalhando com número</strong>s
+    </h1>
+
+    <button onclick="clicou()">
+        Clique para calcular
+    </button>
+
+    <p id="res">
+        O resultado vem aqui...
+    </p>
+
+
+    
+    <script>
+        window.alert('Seja bem-vindo(a) ao meu site!')
+        function clicou(){
+            let num = Number(window.prompt('Digite um número:')) // variavel que vai guardar o numero que o usuario fornecer, seja inteiro ou real
+            let resultado = document.getElementById('res') // variavel vai chamar o paragrafo no html 
+            resultado.innerHTML = (`O dobro de ${num} é ${num*2} e a metade é ${num/2}!`) // mensagem que vai substituir o paragro
+        }
+
+    </script>
+</body>
+</html>
