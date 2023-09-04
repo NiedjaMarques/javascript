@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        body {
+            font: normal 13pt arial;
+        }
+
+        input {
+            background-color: rgba(43, 161, 43, 0.813);
+            border: none;
+            border-radius: 5px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Sistema de Multas
+    </h1>
+    Velocidade do carro: <input type="number" name="txtmulta" id="txtmulta">Km/h
+    <input type="button" value="Verificar" id="clicou" onclick="calcular()">
+
+    <div id="res">
+        
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
