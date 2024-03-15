@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Escreva um programa para calcular a redução do tempo de vida de um 
+    fumante. Pergunte a quantidade de cigarros fumados por dias e quantos anos ele 
+    já fumou. Considere que um fumante perde 10 min de vida a cada cigarro. Calcule 
+    quantos dias de vida um fumante perderá e exiba o total em dias -->
+
+    <h1>Estudo sobre redução do tempo de vida de um fumante</h1>
+
+    <p>Quantos cigarros você fuma por dia?</p>
+
+    <input
+      type="number"
+      name="cigarros"
+      id="cigarros"
+    />
+
+    <p>Você tem esse hábito há quantos anos?</p>
+
+    <input
+      type="number"
+      name="anos"
+      id="anos"
+    />
+
+    <button onclick="calc()">Calcular</button>
+
+    <p id="msg"></p>
+
+    <script src="index.js"></script>
+  </body>
+</html>

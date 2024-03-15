@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Crie um programa que leia o número de dias trabalhados em um mês e mostre o 
+    salário de um funcionário, sabendo que ele trabalha 8 horas por dia e ganha R$25 
+    por hora trabalhada -->
+
+    <h1>Folha de pagamento</h1>
+
+    <p>Quantos dias trabalhados neste mês?</p>
+
+    <input
+      type="number"
+      name="diasTrabalhados"
+      id="diasTrabalhados"
+      placeholder="minimo 1 dia, maximo 30 dias"
+    />
+
+    <button onclick="calc()">Calcular</button>
+
+    <p id="msg"></p>
+
+    <script src="index.js"></script>
+  </body>
+</html>
